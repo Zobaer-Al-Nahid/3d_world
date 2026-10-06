@@ -6,6 +6,10 @@
     <title>Carnival of Shadows</title>
   </head>
   <body style="margin:0;background:#05070c">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- ======== WEBFLOW EMBED: copy from here to the end marker ======== -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
     <style>
@@ -23,7 +27,7 @@
         overflow: hidden;
         background: #05070c;
         color: #e8dcc4;
-        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-family: 'Josefin Sans', sans-serif !important;
         -webkit-user-select: none;
         user-select: none
       }
@@ -61,7 +65,7 @@
 
       #gc-root .gc-logo b {
         display: block;
-        font: 700 15px/1.2 Cinzel, Georgia, serif;
+        font: 700 15px/1.2 'Josefin Sans', sans-serif;
         letter-spacing: .22em;
         color: #d9c9a3
       }
@@ -80,7 +84,7 @@
       }
 
       #gc-root button {
-        font-family: Cinzel, Georgia, serif;
+        font-family: 'Josefin Sans', sans-serif;
         cursor: pointer;
         color: #d9c9a3;
         background: rgba(8, 6, 8, .5);
@@ -211,7 +215,7 @@
         padding: 4px 0;
         box-shadow: none;
         color: #a89a7c;
-        font: 500 11px/1 Cinzel, Georgia, serif;
+        font: 500 11px/1 'Josefin Sans', sans-serif;
         letter-spacing: .32em;
         transition: color .4s, transform .4s
       }
@@ -284,7 +288,7 @@
 
       #gc-root .gc-label b {
         display: block;
-        font: 700 14px/1.2 Cinzel, Georgia, serif;
+        font: 700 14px/1.2 'Josefin Sans', sans-serif;
         letter-spacing: .34em;
         color: #e8dcc4;
         padding-left: .34em
@@ -293,7 +297,7 @@
       #gc-root .gc-label i {
         display: block;
         margin-top: 5px;
-        font: 500 11px/1 Cinzel, Georgia, serif;
+        font: 500 11px/1 'Josefin Sans', sans-serif;
         letter-spacing: .26em;
         color: #c8a45a;
         font-style: normal
@@ -391,8 +395,8 @@
           // ========================================
           // Add a URL later and clicking that character will navigate there (after the camera focus).
           const characterLinks = {
-            ringmaster: "",
-            logo: ""
+            ringmaster: "https://sq3-world.webflow.io/ringmaster",
+            logo: "https://sq3-world.webflow.io/world"
           };
           const characterLinkTarget = "_self"; // "_self" or "_blank"
           // Hosted image URLs (Webflow CDN).
