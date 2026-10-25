@@ -2869,6 +2869,19 @@ gl_FragColor=vec4(c,1.);
 			},
 			click(e) {
 				const url = characterLinks[e.type];
+
+				// Send a message to Webflow when the Visual Art tent is clicked.
+    if (e.type === 'art') {
+        window.parent.postMessage(
+            {
+                type: 'GC_OPEN_PANEL',
+                panel: 'visual-art'
+            },
+            'https://sq3-world.webflow.io'
+        );
+    }
+
+
 				// If this same object is already focused, a second click opens its configured link.
 				if(focusedCharacterForLink === e.type && url) {
 					if(characterLinkTarget === '_blank') window.open(url, '_blank', 'noopener');
