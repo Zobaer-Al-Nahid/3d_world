@@ -2870,12 +2870,23 @@ gl_FragColor=vec4(c,1.);
 			click(e) {
 				const url = characterLinks[e.type];
 
-				// Send a message to Webflow when the Visual Art tent is clicked.
+	// Send a message to Webflow when the Visual Art tent is clicked.**************************************
     if (e.type === 'art') {
         window.parent.postMessage(
             {
                 type: 'GC_OPEN_PANEL',
                 panel: 'visual-art'
+            },
+            'https://sq3-world.webflow.io'
+        );
+    }
+
+	// Open the Actor Reel panel in Webflow
+    if (e.type === 'reel') {
+        window.parent.postMessage(
+            {
+                type: 'GC_OPEN_PANEL',
+                panel: 'actor-reel'
             },
             'https://sq3-world.webflow.io'
         );
