@@ -799,7 +799,7 @@
 		const ROWS = [
 			[-96, -14, 6, 'spire', 'greencream', 3],
 			[-110, -62, 8, 'bigtop', 'rustcream', 4],
-			[-80, -82, 5, 'spire', 'plum', 5],
+			// [-80, -82, 5, 'spire', 'plum', 5],
 			[-40, -84, 7, 'dome', 'teal', 3],
 			[-6, -96, 9, 'pagoda', 'redcream', 5],
 			[34, -84, 6, 'spire', 'sage', 3],
@@ -2891,6 +2891,16 @@ gl_FragColor=vec4(c,1.);
             'https://sq3-world.webflow.io'
         );
     }
+	// Open the Substack image gallery panel in Webflow
+	if (e.type === 'substack') {
+    window.parent.postMessage(
+        {
+            type: 'GC_OPEN_PANEL',
+            panel: 'substack'
+        },
+        'https://sq3-world.webflow.io'
+    );
+}
 
 
 				// If this same object is already focused, a second click opens its configured link.
